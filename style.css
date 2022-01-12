@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+/* header styles */
+header{
+    height: 677px;
+    width: 1440px;
+    background-color: #2D25A0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1160px;
+    height: 44px;
+    margin-left: 162px;
+    margin-top: 44px;
+    margin-bottom: 47px;
+}
+.anchor a{
+    text-decoration: none;
+    margin-right: 25px; 
+    color: white;     
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+#login{
+    margin-right: 118px;
+    width: 123px;
+    height: 44px;
+}
+ .button{
+    background-color: #E02C6D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button span{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.title h1{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-size: 60px;
+    height: 230px;
+    width: 485px;
+    margin-left: 180px;
+    line-height: 80px;
+    margin-top: 0px;
+    overflow-y: hidden;
+}
+
+#live{
+    margin-left: 180px;
+    margin-top: 22px;
+    height: 44px;
+    width: 168px;
+}
+
+.thumbnail{
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 225px;
+    overflow-y: hidden;
+}
+
+.thumbnail img{
+    height: 428px;
+    width: 450px;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.main-header:hover .thumbnail img{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+/* players styles */
+.player{
+    height: 400px;
+    width: 335px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.player img{
+    height: 256px;
+    width: 300px;
+}
+.player h1{
+    font-size: 28px;
+    font-weight: 700px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #18191F;
+    overflow-y: hidden;
+}
+.player p{
+    font-size: 16px;
+    font-weight: 400px;
+    margin-bottom: 33px;
+    color: #6C6C6C;
+    overflow-y: hidden;
+    margin-right: 20px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 15px;
+    margin: 70px 5%;
+    place-items: center;
+}
+.player:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+/* highlights styles */
+.h-thumbnail img{
+    height: 427px;
+    width: 567px;
+    margin-left: 54px;
+}
+.h-info{
+    height: 309px;
+    width: 466px;
+}
+.highlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.h-title h1{
+    font-size: 48px;
+    font-weight: 700px;
+    line-height: 60px;
+}
+.h-title p{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 28px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    height: 113px;
+    width: 404px;
+}
+#now{
+    height: 44px;
+    width: 173px;
+}
+/* footers styles */
+.logo img{
+    height:110px ;
+    width: 484px;
+}
+.social img{
+    height:32px ;
+    width:32px ;
+    margin-bottom: 15px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+}
+.social-i{
+    margin: 7px;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+/* responsive */
+/* mobile devices */
+@media only screen and (max-width: 668px){
+    /* headers styles */
+    header{
+        height: 695;
+        width: 100%
+    }
+    .anchor{
+        display: none;
+    }
+    #login{
+        margin-left: 90px;
+    }
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title h1{
+        font-size: 25px;
+        height: 138px;
+        width: 278px;
+        margin-left: 14px;
+        line-height: 50px;
+    }
+    #live{
+        margin-left: 14px;
+    }
+    .thumbnail{
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 16px;
+        width: 100%;
+    }
+    .thumbnail img{
+        height: 245px;
+        width: 328px;
+    }
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+        place-items: center;
+    }
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .h-info{
+        height: 355px;
+        width: 329px;
+        overflow-y: hidden;
+        margin-bottom: 30px;
+    }
+    .logo img{
+        height: 70px;
+        width: 284px;
+    }
+} 
+    
